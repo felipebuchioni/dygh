@@ -1,0 +1,161 @@
+.aside-bar {
+
+  width: 20%;
+  height: 85vh;
+  background-color: var(--medium-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.aside-logo {
+  max-width: 150px;
+  min-width: 50px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-icon {
+  width: 30px;
+  margin-left: 80px;
+}
+
+.menu-img {
+  width: 55px;
+  margin-left: 60px;
+}
+
+.aside-list {
+  white-space: nowrap;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.aside-title {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0 0 20px 40px;
+}
+
+.aside-item {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.active {
+  background-color: var(--light-black);
+}
+
+.aside-item-playlist {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.aside-item:hover {
+  background-color: var(--light-black);
+}
+
+.aside-item-playlist:hover {
+  background-color: var(--light-black);
+}
+
+.aside-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-left: 40px;
+}
+
+
+@media screen and (max-width: 1550px) {
+  .menu-img {
+    margin-left: 30px;
+  }
+
+  .menu-icon {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .aside-link {
+    margin-left: 20px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1150px){
+
+  .aside-bar {
+    justify-content: flex-start;
+    align-items: center;
+    width: 30vw;
+  }
+
+  .aside-title {
+    font-size: 1.5em;
+    margin: 0 auto 10px auto;
+  }
+
+  .aside-logo {
+    margin: 30px 0px;
+    width: 140px;
+  }
+
+  .menu-img {
+    width: 40px;
+    margin-left: 40px;
+  }
+
+  .menu-icon {
+    margin-left: 45px;
+  }
+
+  .aside-item {
+    padding: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .aside-bar {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .aside-bar {
+    width: 30%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .aside-logo {
+    margin-top: 200px;
+  }
+} 
+
+@media screen and (max-width: 695px) {
+    .aside-bar {
+      display: none;
+    } 
+
+}
+
+@media screen and (max-width: 375px) {
+  .aside-bar {
+    display: none;
+  }
+}

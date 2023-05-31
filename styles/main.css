@@ -1,0 +1,210 @@
+.main-content {
+  width: 80%;
+  max-height: 85vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.main-header {
+  background-image: url(../img/joji-background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: var(--white);
+  padding: 40px 125px;
+  gap: 30px 0;
+}
+
+.prev-next-btn {
+  width: 120px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.verify-icon {
+  width: 40px;
+}
+
+.verified-artist {
+  display: flex;
+  align-items: center;
+  gap: 0px 20px;
+}
+
+.artist-title {
+  font-size: 8em;
+}
+
+.desc-text {
+  font-size: 1.2em;
+}
+
+.play-options {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  margin-bottom: 40px;
+}
+
+.play-options-play {
+  width: 80px;
+}
+
+.play-options-follow {
+  font-size: 1.1em;
+  color: var(--red);
+  border: 2px solid var(--red);
+  padding: 0.5em 2.2em;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.play-options-follow:hover {
+  background: var(--red) ;
+  color: var(--black);
+}
+
+.play-options-points {
+  align-self: center;
+  color: var(--red);
+  font-size: 90px;
+}
+
+.artist-musics {
+  padding: 0px 125px;
+}
+
+.popular-title {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 2.4em;
+}
+
+.popular-song-icon {
+  width: 60px;
+  margin: 0px 30px 0px 30px;
+}
+
+.popular-table {
+  width: 100%;
+  color: var(--white);
+}
+
+.popular-table-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 65px;
+  margin-bottom: 20px;
+}
+
+.song-elements {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.music-title {
+  font-weight: 400;
+}
+
+.like-line {
+  display: flex;
+  align-items: center;
+  gap: 0px 40px;
+}
+
+@media screen and (max-width: 1150px) {
+  .viewers {
+    display: none;
+  }
+
+  .main-header {
+    background-position: 0px -100px;
+    background-size: 1000px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .main-header {
+    padding: 40px 50px;
+    background-position: -220px;
+  }
+
+  .artist-musics {
+    padding: 0px 50px;
+  }
+
+
+}
+
+@media screen and (max-width: 780px) {
+  .popular-table-line {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 695px) {
+
+  .main-header {
+    background-size: cover;
+    background-position: -100px -50px;
+  }
+
+  .main-content {
+    width: 100vw;
+    max-height: 80vh;
+  }
+
+  .time {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .artist-musics {
+    padding: 0px 30px;
+  }
+
+  .main-header {
+    padding: 40px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .time {
+    display: none;
+  }
+
+  .main-header {
+    background-position: -250px -100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-header {
+    background-position: -170px -100px;
+  }
+
+  .main-content {
+    width: 100vw;
+  }
+
+  .artist-title {
+    font-size: 5em;
+  }
+
+  .desc-text {
+    font-size: 1em;
+  }
+
+  .verify-icon {
+    width: 20px;
+  }
+}
